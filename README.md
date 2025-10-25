@@ -24,8 +24,8 @@ Fine-tune LLMs (Llama 3.1 or Mistral 7B) on your personal email style using LoRA
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
-cd mail-training
+git clone https://github.com/teulaert/email-style-lora
+cd email-style-lora
 
 # Create virtual environment
 python3 -m venv venv
