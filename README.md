@@ -37,11 +37,19 @@ pip install -r requirements.txt
 
 ### 2. Prepare Your Data
 
-Export your emails from Gmail (Google Takeout) or your email client in `.mbox` format.
+**⚠️ Important:** Export your **Sent Items** (emails YOU wrote), not your inbox!
+
+Export your sent emails from Gmail (Google Takeout) or your email client in `.mbox` format.
+
+**For Gmail:**
+- Go to [Google Takeout](https://takeout.google.com/)
+- Select only "Mail"
+- Click "All Mail data included" and deselect everything except **"Sent"**
+- Download the `.mbox` file
 
 ```bash
-# Process your mbox files
-python email_processor.py --input path/to/your/emails.mbox --output training_data
+# Process your mbox files (sent items only!)
+python email_processor.py --input path/to/Sent.mbox --output training_data
 
 # Split into train/validation sets
 python split_data.py --input training_data/processed.jsonl --train-ratio 0.9

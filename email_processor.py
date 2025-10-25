@@ -341,6 +341,14 @@ def main():
 
     args = parser.parse_args()
 
+    print("="*60)
+    print("⚠️  IMPORTANT: Use SENT emails only!")
+    print("="*60)
+    print("This tool should process emails YOU wrote (Sent Items),")
+    print("not emails you received. Training on inbox emails will")
+    print("teach the model other people's writing style, not yours!")
+    print("="*60 + "\n")
+
     processor = EmailProcessor(output_dir=args.output)
 
     max_emails = args.max_emails
