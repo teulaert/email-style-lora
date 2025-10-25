@@ -1,0 +1,53 @@
+# Personal Training Data (contains private email data)
+training_data/
+processed_data/
+source/
+
+# Trained Models (too large for git)
+models/
+
+# Training Logs
+training_*.txt
+*.log
+
+# Exception: Keep requirements.txt
+!requirements.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Cache directories
+unsloth_compiled_cache/
+
+# Claude Code configuration
+.claude/
